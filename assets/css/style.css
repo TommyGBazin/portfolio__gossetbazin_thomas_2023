@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Josefin+Sans');
 @import "https://raw.githubusercontent.com/twbs/bootstrap/v4-dev/scss/bootstrap.scss";
 
+
+:root{
+  --white-dark: #ECECEC;
+}
+
+
 body {
   font-family: "Montserrat", sans-serif;
   background: rgb(21,21,22);
@@ -114,36 +120,77 @@ Contact
   align-items: center;
   background: #151516;
   color: #fdfdfd;
-  line-height: 1;
-  margin-right: 8px;
-  width: 20px;
+  line-height: 1; 
 }
 
 .social-links .contact__icon:hover {
-  border-radius: 50%;
+  /* border-radius: 50%;
   width: 40px;
   height:40px;
-  background: linear-gradient(145.01deg, #F3BD41 16.55%, #D96039 39.82%, #AC3C6D 62.38%, #902C96 85.29%);
+  background: linear-gradient(145.01deg, #F3BD41 16.55%, #D96039 39.82%, #AC3C6D 62.38%, #902C96 85.29%); */
 }
 
-.icon__border__mail::before {
-  background-image: url(./images/bg-social-1);
+.social-links a{
+     position: relative;
+    width: 59px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links a span img{
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
 }
 
-.icon__border__linkedin::before {
-  background-image: url(./images/bg-social-1);
+
+.social-links a span:before{
+   position: absolute;
+  top: 0;
+  left: 0;  
+}
+.social-links a span.mail:before{
+  content: url("../img/bg-social-1.svg");
+}
+.social-links a span.linkedin:before{
+  content: url("../img/bg-social-2.svg");
+}
+.social-links a span.behance:before{
+  content: url("../img/bg-social-3.svg");
+}
+.social-links a span.insta:before{
+  content: url("../img/bg-social-4.svg");
+}
+.social-links a span.twitter:before{
+  content: url("../img/bg-social-5.svg");
 }
 
-.icon__border__behance::before {
-  background-image: url(./images/bg-social-1);
+.social-links a:before{ 
+   content: '';
+    background: linear-gradient(145.01deg, #F3BD41 16.55%, #D96039 39.82%, #AC3C6D 62.38%, #902C96 85.29%);
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    opacity: 0;   
 }
 
-.icon__border__insta::before {
-  background-image: url(./images/bg-social-1);
+.social-links a:hover:before{ 
+    opacity: 1;
 }
 
-.icon__border__twitter::before {
-  background-image: url(./images/bg-social-1);
+@media screen and (max-width: 1024px) 
+{
+  .social-links a:before{
+    opacity: 1;  
+  } 
+}
+
+
+.icon__border::before {
+  background-image: url('./assets/img/bg-social-1.svg');
 }
 
 @media screen and (max-width: 992px) {
@@ -169,5 +216,61 @@ Contact
 @media screen and (max-width: 768px) {
   .credits {
     text-align: center;
+  }
+}
+
+
+.project{  
+    position: fixed;
+    right: 50px;
+    bottom: 0;
+    height: 90vh;
+    overflow: hidden; 
+    background-color: var(--white-dark);
+    transform: translateY(108%) rotate(25deg);
+    transform-origin: top left;
+    transition: transform .6s var(--ease-in-out-cubic);
+    width: 50vw;
+    z-index: 3;
+    transition: all .3s ease;
+    padding: 2em;
+   
+}
+
+.project .close{
+  cursor: pointer;
+  font-size: 88px;
+  color: #902C96;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+ /* .item__project.js-click-none{
+  pointer-events: none;
+ } */
+
+
+.js-animation-hover-project{
+  transform: translateY(66%) rotate(19deg);
+}
+.js-animation-click-project{
+  transform: translateY(0) rotate(0);
+}
+
+@media screen and (max-width: 768px) {
+  .project{
+      width: 100%;
+      right: 0;
+      top: 0;
+      height: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .project{
+      /* width: 100%; */
+      right: 0;
+      top: 0;
+      height: 100%;
   }
 }
