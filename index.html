@@ -9,13 +9,13 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   
-<!-- Favicons -->
-
+  <!-- Favicons -->
+  
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   
-<!-- CSS -->
-
+  <!-- CSS -->
+  
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
@@ -23,85 +23,117 @@
 </head>
 
 <body>
-
-<!-- ======= En-tête ======= -->
-  
   <div class="container">
-    <div class="row">
-      <div class="col">
-        
-        <p class="name__title">Thomas <strong>Gosset-Bazin</strong></p>
-        <p class="job__title">— Designer UI UX</p>
-        
-      </div>
-    </div>
-    
-<!-- ======= Story telling ======= -->
-    
-    <div class="row">
-      <div class="col-lg-4 offset-lg-6">
-        <img src="./images/PhotoProfil.png" class="img-fluid" alt="Story Telling">
-      </div>
-    </div>
-    
-<!-- ======= Projets ======= -->
-    
-    <div class="row">
-      <div class="col">
-        <ul>
-          <li>               
-            <a href="" class="" target="_blank" aria-current="true">
-              <span class="number__list">01 </span>
-              <span>Refonte fictive du site e-commerce BilletReduc</span>
-            </a>
-          </li>
-          <li>                
-            <a href="" class="" target="_blank">
-              <span class="number__list">02 </span>
-              <span>Refonte fictive de la landing page de Deezer</span>
-            </a>
-          </li>
-          <li>                
-            <a href="" class="" target="_blank">
-              <span class="number__list">03 </span>
-              <span>Maquette d’un site d’agence de communication</span>
-            </a>
-          </li>
-          <li>                
-            <a href="" class="" target="_blank">
-              <span class="number__list">04 </span>
-              <span>Création d’un logo & charte graphique</span>
-            </a>
-          </li>
-          <li>                
-            <a href="" class="" target="_blank">
-              <span class="number__list">05 </span>
-              <span>Création d’un feed Instagram</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    
-<!-- ======= Contact ======= -->
-    
-    <div class="row">
-      <div class="col">
-        <div class="social-links">
-          <a href="#" class="mail"><i class="bi bi-envelope"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          <a href="#" class="behance"><i class="bi bi-behance"></i></a>
-          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+
+  <!-- ======= En-tête ======= -->
+
+      <header>
+      <div class="row py-4">
+        <div class="col m-0">
+          
+          <p class="name__title">Thomas <strong>Gosset-Bazin</strong></p>
+          <p class="job__title active-gradient gradient-text">— Designer UI UX</p>
+          
         </div>
       </div>
+      
+      <!-- ======= Story telling ======= -->
+      
+      <div class="row">
+        <div class="col-lg-4 offset-lg-6 col-xs-12 d-flex justify-content-center">
+          <img src="./images/PhotoProfil.png" class="img-fluid story__telling" 
+          srcset="./images/PhotoProfil-992.png 992w, ./images/PhotoProfil-768.png 768w" alt="Story Telling">
+        </div>
+      </div>
+    </header>
+    
+    <!-- ======= Projets ======= -->
+    
+    <main>
+      <div class="row">
+        
+        <div class="col">
+          <ul>
+            <li>               
+              <a href="#" class="js-cards-show" data-link-card="biller__reduc">
+                <span class="number__list">01 </span>
+                <span>Refonte fictive du site e-commerce BilletReduc</span>
+              </a>
+            </li>
+            <li>                
+              <a href="#" class="js-cards-show" data-link-card="deezer">
+                <span class="number__list">02 </span>
+                <span>Refonte fictive de la landing page de Deezer</span>
+              </a>
+            </li>
+            <li>                
+              <a href="#" class="js-cards-show" data-link-card="agence">
+                <span class="number__list">03 </span>
+                <span>Maquette d’un site d’agence de communication</span>
+              </a>
+            </li>
+            <li>                
+              <a href="#" class="js-cards-show" data-link-card="charte__graphique">
+                <span class="number__list">04 </span>
+                <span>Création d’un logo & charte graphique</span>
+              </a>
+            </li>
+            <li>                
+              <a href="#" class="js-cards-show" data-link-card="instagram">
+                <span class="number__list">05 </span>
+                <span>Création d’un feed Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="row container__cards ">
+        <div class="col position-absolute ">
+          <div class="projet__card projet__pafundi">
+            
+          </div>
+        </div>
+        <div class="col position-absolute">
+          <div class="projet__card">
+            
+          </div>
+        </div>
+        <div class="col position-absolute">
+          <div class="projet__card">
+            
+          </div>
+        </div>
+        <div class="col position-absolute">
+          <div class="projet__card">
+            
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <!-- ======= Contact ======= -->
+    <footer>
+      <div class="row">
+        <div class="col">
+          <div class="social-links">             
+              <img href="#" class="contact__icon icon__border__mail" src="./images/icon-mail.svg" alt="Mail icône">
+              <img href="#" class="contact__icon icon__border__linkedin" src="./images/icon-linkedin.svg" alt="Linkedin icône">
+              <img href="#" class="contact__icon icon__border__behance" src="./images/icon-behance.svg" alt="Behance icône">
+              <img href="#" class="contact__icon icon__border__insta" src="./images/icon-insta.svg" alt="Instagram icône">
+              <img href="#" class="contact__icon icon__border__twitter" src="./images/icon-twitter.svg" alt="Twitter icône">
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="credits">
+          <p>&copy; Copyright <strong><span>Thomas Gosset-Bazin</span></strong>. Tous droits réservés.</p>
+        </div>
+      </footer>
+      
     </div>
     
-    <div class="credits">
-      <p>&copy; Copyright <strong><span>Thomas Gosset-Bazin</span></strong>. Tous droits réservés.</p>
-    </div>
-    
-  </div>
-</body>
-
-</html>
+  </body>
+  
+  </html>
