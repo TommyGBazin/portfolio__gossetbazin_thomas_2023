@@ -3,17 +3,20 @@
 
 
 :root{
-  --white-dark: #ECECEC;
+  --white-dark: #fdfdfd;
 }
 
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: rgb(21,21,22);
   background: linear-gradient(180deg, rgba(21,21,22,1) 0%, rgba(12,12,11,1) 100%);
   color: #fdfdfd;
   height: 100vh;
   overflow: hidden;
+}
+
+.container {
+  height: 100vh;
 }
 
 /*--------------------------------------------------------------
@@ -37,42 +40,42 @@ En-tête
 }
 
 .active-gradient{
-    background: linear-gradient(45deg, #F3BD41, #902C96, #F3BD41, #902C96);
-    background-size: 400% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    -webkit-animation: GradientBreathe 2.42s linear infinite;
-    -moz-animation: GradientBreathe 2.42s linear infinite;
-    animation: GradientBreathe 2.42s linear infinite;
+  background: linear-gradient(45deg, #F3BD41, #902C96, #F3BD41, #902C96);
+  background-size: 400% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  -webkit-animation: GradientBreathe 2.42s linear infinite;
+  -moz-animation: GradientBreathe 2.42s linear infinite;
+  animation: GradientBreathe 2.42s linear infinite;
 }
 
-    @-webkit-keyframes GradientBreathe {
-        0%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @-moz-keyframes GradientBreathe {
-        0%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @keyframes GradientBreathe { 
-        0%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
+@-webkit-keyframes GradientBreathe {
+  0%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes GradientBreathe {
+  0%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes GradientBreathe { 
+  0%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
 
 
 @media screen and (min-width: 768px) {
   .name__title {
-      font-size: 40px;
-    }
+    font-size: 40px;
   }
+}
 
 @media screen and (min-width: 768px) {
   .job__title {
-      font-size: 40px;
-      font-family: "josefin sans", sans-serif;
-      }
-    }
+    font-size: 40px;
+    font-family: "josefin sans", sans-serif;
+  }
+}
 
 /*--------------------------------------------------------------
 STORY TELLING
@@ -80,6 +83,7 @@ STORY TELLING
 
 .story__telling {
   transition: box-shadow .3s ease-out;
+  max-width: 350px;
 }
 
 /*--------------------------------------------------------------
@@ -94,6 +98,10 @@ PROJET
   -webkit-text-fill-color: transparent;
 }
 
+.title__list {
+  padding-left: 2.5vw;
+}
+
 a {
   color: #fdfdfd !important;
   text-decoration: none;
@@ -102,6 +110,110 @@ a {
 ul {
   list-style-type: none;
   padding-left: 0rem;
+  display: inline-block;
+  line-height: 1.50;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.project{  
+  position: fixed;
+  right: 50px;
+  bottom: 0;
+  height: 90vh;
+  overflow: hidden; 
+  background-color: var(--white-dark);
+  transform: translateY(108%) rotate(25deg);
+  transform-origin: top left;
+  transition: transform .6s var(--ease-in-out-cubic);
+  width: 50vw;
+  z-index: 3;
+  transition: all .3s ease;
+  padding: 3em;
+  max-height: 100vh;
+}
+
+.js-animation-hover-project{
+  transform: translateY(66%) rotate(19deg);
+}
+.js-animation-click-project{
+  transform: translateY(0) rotate(0);
+}
+
+@media screen and (max-width: 768px) {
+  .project{
+    width: 100%;
+    right: 0;
+    top: 0;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .project{
+    /* width: 100%; */
+    right: 0;
+    top: 0;
+    height: 100%;
+  }
+}
+
+.project .close{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.number__card {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  background: linear-gradient(145.01deg, #F3BD41 16.55%, #D96039 39.82%, #AC3C6D 62.38%, #902C96 85.29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title__card {
+  color: #151516;
+  font-size: 24px;
+}
+
+.subtitle__card {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #959598;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.content__card {
+  color: #151516;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .title__card {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle__card {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content__card {
+    font-size: 16px;
+  }
+}
+
+.image__project {
+  transition: box-shadow .3s ease-out;
+  max-height: 350px;
 }
 
 /*--------------------------------------------------------------
@@ -114,83 +226,49 @@ Contact
   align-items: center;
 }
 
-.social-links .contact__icon {
+.social-links svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #151516;
-  color: #fdfdfd;
   line-height: 1; 
 }
 
-.social-links .contact__icon:hover {
-  /* border-radius: 50%;
-  width: 40px;
-  height:40px;
-  background: linear-gradient(145.01deg, #F3BD41 16.55%, #D96039 39.82%, #AC3C6D 62.38%, #902C96 85.29%); */
-}
-
 .social-links a{
-     position: relative;
-    width: 59px;
-    height: 59px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social-links a span img{
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-    position: relative;
+  position: relative;
+  width: 59px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.social-links a span img{
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  position: relative;
+}
 
 .social-links a span:before{
-   position: absolute;
+  position: absolute;
   top: 0;
   left: 0;  
 }
+
 .social-links a span.mail:before{
-  content: url("../img/bg-social-1.svg");
+  content: url("../img/bg-social-mail.png");
 }
 .social-links a span.linkedin:before{
-  content: url("../img/bg-social-2.svg");
+  content: url("../img/bg-social-linkedin.png");
 }
 .social-links a span.behance:before{
-  content: url("../img/bg-social-3.svg");
+  content: url("../img/bg-social-behance.png");
 }
 .social-links a span.insta:before{
-  content: url("../img/bg-social-4.svg");
+  content: url("../img/bg-social-instagram.png");
 }
 .social-links a span.twitter:before{
-  content: url("../img/bg-social-5.svg");
-}
-
-.social-links a:before{ 
-   content: '';
-    background: linear-gradient(145.01deg, #F3BD41 16.55%, #D96039 39.82%, #AC3C6D 62.38%, #902C96 85.29%);
-    position: absolute;
-    width: 70%;
-    height: 70%;
-    border-radius: 50%;
-    opacity: 0;   
-}
-
-.social-links a:hover:before{ 
-    opacity: 1;
-}
-
-@media screen and (max-width: 1024px) 
-{
-  .social-links a:before{
-    opacity: 1;  
-  } 
-}
-
-
-.icon__border::before {
-  background-image: url('./assets/img/bg-social-1.svg');
+  content: url("../img/bg-social-twitter.png");
 }
 
 @media screen and (max-width: 992px) {
@@ -219,58 +297,46 @@ Contact
   }
 }
 
+/*--------------------------------------------------------------
+# Cursor
+--------------------------------------------------------------*/
 
-.project{  
-    position: fixed;
-    right: 50px;
-    bottom: 0;
-    height: 90vh;
-    overflow: hidden; 
-    background-color: var(--white-dark);
-    transform: translateY(108%) rotate(25deg);
-    transform-origin: top left;
-    transition: transform .6s var(--ease-in-out-cubic);
-    width: 50vw;
-    z-index: 3;
-    transition: all .3s ease;
-    padding: 2em;
-   
-}
-
-.project .close{
-  cursor: pointer;
-  font-size: 88px;
-  color: #902C96;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
- /* .item__project.js-click-none{
+.cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #fdfdfd;
+  transition: all 200ms ease-out;
+  position: fixed;
   pointer-events: none;
- } */
-
-
-.js-animation-hover-project{
-  transform: translateY(66%) rotate(19deg);
-}
-.js-animation-click-project{
-  transform: translateY(0) rotate(0);
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 9999;
+  mix-blend-mode: difference;
 }
 
-@media screen and (max-width: 768px) {
-  .project{
-      width: 100%;
-      right: 0;
-      top: 0;
-      height: 100%;
-  }
+.cursor2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #fdfdfd;
+  /* opacity: .3; */
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index: 9999;
+  mix-blend-mode: difference;
 }
-@media screen and (max-width: 1200px) {
-  .project{
-      /* width: 100%; */
-      right: 0;
-      top: 0;
-      height: 100%;
-  }
+
+.hover {
+  background: linear-gradient(45deg, #F3BD41, #D96039, #AC3C6D, #902C96);
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
 }
