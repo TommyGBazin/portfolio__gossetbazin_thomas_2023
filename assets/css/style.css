@@ -86,7 +86,6 @@ STORY TELLING
 --------------------------------------------------------------*/
 
 .story__telling {
-  transition: box-shadow .3s ease-out;
   max-width: 350px;
 }
 
