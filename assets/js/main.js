@@ -1,54 +1,5 @@
 // declaration d une variable
-let projectitems =  $('.item__project'),
-closebtn = $('.project .close');
-
-projectitems.hover(
-  function() {
-    let objproject = $(this).data('link-card');
-    $('.'+objproject).css('z-index','999');
-    $('.'+objproject).addClass('js-animation-hover-project');
-    
-    
-  }, function() {
-    let objproject = $(this).data('link-card');
-    $('.project').css('z-index','10');
-    $('.'+objproject).removeClass('js-animation-hover-project');
-  }
-  );
-  
-  projectitems.on('click', function(){
-    let objproject = $(this).data('link-card'),
-    itemwithclass = $('.project.js-animation-click-project');
-    
-    if( $(itemwithclass).lenght > 0 )
-    {
-      $( itemwithclass ).animate({
-        transform: "translateY(66%) rotate(19deg)",
-        opacity:0
-      }, 100000, function() {
-        // Animation complete.
-        $('.project').removeClass('js-animation-click-project');
-        
-        // animation de la card avec apparition d en bas
-        $('.'+objproject).addClass('js-animation-click-project');
-        
-      });
-    }
-    else
-    {
-      $('.project').removeClass('js-animation-click-project');
-      $('.'+objproject).addClass('js-animation-click-project');
-    }
-    
-  });
-  
-  closebtn.on('click', function(){
-    $(this).closest('.project').removeClass('js-animation-click-project');
-    
-    $('.item__project').not(this).removeClass('js-click-none');
-  });
-  
-  let project__items =  $('.item__project'),
+let project__items =  $('.item__project'),
 close__btn = $('.project .close');
 
 project__items.hover(
@@ -98,7 +49,7 @@ project__items.hover(
     }
 
   });
-  
+
           // cursor custom
 
   var cursor = document.querySelector('.cursor');
@@ -137,7 +88,7 @@ project__items.hover(
     });
   });
 
-  document.body.style.cursor = 'none'
-    document.body.querySelectorAll("button, label, input, textarea, select, a").forEach((el) => {
-      el.style.cursor = 'inherit'
-    })
+  // document.body.style.cursor = 'none'
+  //   document.body.querySelectorAll("button, label, input, textarea, select, a").forEach((el) => {
+  //     el.style.cursor = 'inherit'
+  //   })

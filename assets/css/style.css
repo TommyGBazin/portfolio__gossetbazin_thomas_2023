@@ -109,7 +109,7 @@ PROJET
   padding-left: 2.5vw;
 }
 
-a .title__list {
+a span.title__list {
   color: #fdfdfd;
 }
 
@@ -140,6 +140,7 @@ li {
   transition: all .3s ease;
   padding: 3em;
   max-height: 100vh;
+  opacity: 1;
 }
 
 .js-animation-hover-project{
@@ -147,6 +148,21 @@ li {
 }
 .js-animation-click-project{
   transform: translateY(0) rotate(0);
+}
+
+.projects .item__project a span{
+  transition: color .2s ease;
+}
+
+.projects .item__project.hover-link a span{
+  color: rgba(255,255,255,1) !important;
+}
+.projects .item__project.hover-link a .number__list{
+  background-blend-mode: luminosity;
+}
+
+.projects .item__project.hover-active-link a span{
+  color: rgba(255,255,255,.41) !important;
 }
 
 @media screen and (max-width: 768px) {
