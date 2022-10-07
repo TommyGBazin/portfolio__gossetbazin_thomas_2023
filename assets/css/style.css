@@ -31,12 +31,13 @@ En-tête
 }
 
 .job__title {
-  font-family: "josefin sans", sans-serif;
+  /* font-family: "josefin sans", sans-serif; */
   font-size: 24px;
+  color: #959598;
 }
 
-.gradient-text{
-  transition: background-color 1s ease;
+/* .gradient-text{
+  transition: background-color 3s ease-out;
 }
 
 .active-gradient{
@@ -61,8 +62,7 @@ En-tête
 @keyframes GradientBreathe { 
   0%{background-position:100% 50%}
   100%{background-position:0% 50%}
-}
-
+} */
 
 @media screen and (min-width: 768px) {
   .name__title {
@@ -73,8 +73,12 @@ En-tête
 @media screen and (min-width: 768px) {
   .job__title {
     font-size: 40px;
-    font-family: "josefin sans", sans-serif;
+    /* font-family: "josefin sans", sans-serif; */
   }
+}
+
+a {  
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -98,13 +102,16 @@ PROJET
   -webkit-text-fill-color: transparent;
 }
 
+.number__align {
+  letter-spacing: 3px;
+}
+
 .title__list {
   padding-left: 2.5vw;
 }
 
-a {
-  color: #fdfdfd !important;
-  text-decoration: none;
+a .title__list {
+  color: #fdfdfd;
 }
 
 ul {
@@ -193,6 +200,10 @@ li {
   font-size: 14px;
 }
 
+.content__card  a{
+  color: #151516 !important;
+}
+
 @media screen and (min-width: 768px) {
   .title__card {
     font-size: 28px;
@@ -212,7 +223,6 @@ li {
 }
 
 .image__project {
-  transition: box-shadow .3s ease-out;
   max-height: 350px;
 }
 
