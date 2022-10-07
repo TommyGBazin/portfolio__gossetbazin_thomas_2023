@@ -8,11 +8,18 @@
 
 
 body {
+  font-size: 13px;
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(180deg, rgba(21,21,22,1) 0%, rgba(12,12,11,1) 100%);
   color: #fdfdfd;
   height: 100vh;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
 }
 
 .container {
@@ -125,7 +132,7 @@ li {
   text-align: -webkit-match-parent;
 }
 
-.project{  
+.project {  
   position: fixed;
   right: 50px;
   bottom: 0;
@@ -155,14 +162,15 @@ li {
 }
 
 .projects .item__project.hover-link a span{
-  color: rgba(255,255,255,1) !important;
-}
-.projects .item__project.hover-link a .number__list{
-  background-blend-mode: luminosity;
+  color: #fdfdfd !important;
 }
 
+/* .projects .item__project.hover-link a .number__list{
+  background-blend-mode: luminosity;
+} */
+
 .projects .item__project.hover-active-link a span{
-  color: rgba(255,255,255,.41) !important;
+  color: #959598 !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -192,10 +200,16 @@ li {
 
 .number__card {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   background: linear-gradient(145.01deg, #F3BD41 16.55%, #D96039 39.82%, #AC3C6D 62.38%, #902C96 85.29%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 768px){
+  .number__card {
+    font-size: 30px;
+  }  
 }
 
 .title__card {
@@ -249,6 +263,7 @@ Contact
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 10px;
 }
 
 .social-links svg {
@@ -299,7 +314,6 @@ Contact
 @media screen and (max-width: 992px) {
   .social-links {
     justify-content: center;
-    padding: 10px;
   }
 }
 
@@ -316,7 +330,7 @@ Contact
   font-size: 13px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .credits {
     text-align: center;
   }
