@@ -190,6 +190,10 @@ li {
   }
 }
 
+.project .close svg{
+  fill: #151516;
+}
+
 .project .close{
   cursor: pointer;
   position: absolute;
