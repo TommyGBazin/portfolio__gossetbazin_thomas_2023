@@ -277,7 +277,7 @@ Contact
   line-height: 1; 
 }
 
-.social-links a{
+.social-links a {
   position: relative;
   width: 59px;
   height: 59px;
@@ -286,20 +286,20 @@ Contact
   align-items: center;
 }
 
-.social-links a span img{
+.social-links a span img {
   margin: 0;
   padding: 0;
   z-index: 1;
   position: relative;
 }
 
-.social-links a span:before{
+.social-links a span:before {
   position: absolute;
   top: 0;
   left: 0;  
 }
 
-.social-links a span.mail:before{
+.social-links a span.mail:before {
   content: url("../img/bg-social-mail.png");
 }
 .social-links a span.linkedin:before{
@@ -382,4 +382,16 @@ Contact
   width: 50px;
   height: 50px;
   opacity: .5;
+}
+
+@media only screen and (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cursor2 {
+    display: none;
+  }
 }

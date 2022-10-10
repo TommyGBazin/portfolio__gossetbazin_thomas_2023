@@ -91,4 +91,4 @@ project__items.hover(
   document.body.style.cursor = 'none'
     document.body.querySelectorAll("button, label, input, textarea, select, a").forEach((el) => {
       el.style.cursor = 'inherit'
-    })
+    });
