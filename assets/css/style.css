@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Josefin+Sans');
-@import "https://raw.githubusercontent.com/twbs/bootstrap/v4-dev/scss/bootstrap.scss";
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  .project {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  .project::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .project::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  .project::-webkit-scrollbar-thumb {
+    background-color: #151516;
+    border-radius: 10px;
+    border: 4px solid #fff;
+  }
 
 
 :root{
@@ -42,6 +64,8 @@ En-tête
   font-size: 24px;
   color: #959598;
 }
+
+
 
 /* .gradient-text{
   transition: background-color 3s ease-out;
@@ -137,7 +161,7 @@ li {
   right: 50px;
   bottom: 0;
   height: 90vh;
-  overflow: hidden; 
+  overflow-y: scroll;
   background-color: var(--white-dark);
   transform: translateY(108%) rotate(25deg);
   transform-origin: top left;
