@@ -127,7 +127,7 @@ PROJET
 .number__list {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background: linear-gradient(145.01deg, #F3BD41 16.55%, #D96039 39.82%, #AC3C6D 62.38%, #902C96 85.29%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
