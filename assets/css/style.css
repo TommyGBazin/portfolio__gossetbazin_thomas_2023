@@ -5,7 +5,7 @@
   /* Firefox */
   .project {
     scrollbar-width: auto;
-    scrollbar-color: #8f54a0 #ffffff;
+    scrollbar-color: #009999 #fdfdfd;
   }
 
   /* Chrome, Edge, and Safari */
@@ -14,11 +14,11 @@
   }
 
   .project::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #fdfdfd;
   }
 
   .project::-webkit-scrollbar-thumb {
-    background-color: #151516;
+    background-color: #151616;
     border-radius: 10px;
     border: 4px solid #fff;
   }
@@ -32,7 +32,7 @@
 body {
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(180deg, rgba(21,21,22,1) 0%, rgba(12,12,11,1) 100%);
+  background-image: linear-gradient(180deg, rgba(21,21,22,1) 0%, rgba(12,12,11,1) 100%);
   color: #fdfdfd;
   height: 100vh;
   overflow: hidden;
@@ -127,7 +127,7 @@ PROJET
 .number__list {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
-  background: linear-gradient(145.01deg, #F3BD41 16.55%, #D96039 39.82%, #AC3C6D 62.38%, #902C96 85.29%);
+  background: linear-gradient(145.01deg, rgba(0,178,178,1) 16.55%, rgba(0,164,164,1) 39.82%, rgba(0,153,153,1) 62.38%, rgba(38,101,95,1) 85.29%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -215,7 +215,7 @@ li {
 }
 
 .project .close svg{
-  fill: #151516;
+  fill: #151616;
 }
 
 .project .close{
@@ -229,7 +229,7 @@ li {
 .number__card {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
-  background: linear-gradient(145.01deg, #F3BD41 16.55%, #D96039 39.82%, #AC3C6D 62.38%, #902C96 85.29%);
+  background: linear-gradient(145.01deg, rgba(0,178,178,1) 16.55%, rgba(0,164,164,1) 39.82%, rgba(0,153,153,1) 62.38%, rgba(38,101,95,1) 85.29%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -241,25 +241,25 @@ li {
 }
 
 .title__card {
-  color: #151516;
+  color: #151616;
   font-size: 24px;
 }
 
 .subtitle__card {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
-  color: #151516;
+  color: #151616;
   font-size: 14px;
   margin-bottom: 20px;
 }
 
 .content__card {
-  color: #151516;
+  color: #151616;
   font-size: 14px;
 }
 
-.content__card  a{
-  color: #151516 !important;
+.content__card  a {
+  color: #151616 !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -373,7 +373,7 @@ Contact
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  border: 1px solid #fdfdfd;
+  border: 1px solid #009999;
   transition: all 200ms ease-out;
   position: fixed;
   pointer-events: none;
@@ -399,8 +399,8 @@ Contact
 }
 
 .hover {
-  background: linear-gradient(45deg, #F3BD41, #D96039, #AC3C6D, #902C96);
-  opacity: 0.5;
+  background: linear-gradient(45deg,rgba(0,178,178,1), rgba(0,164,164,1), rgba(0,153,153,1), rgba(38,101,95,1));
+  opacity: 0.25;
 }
 
 .cursorinnerhover {
