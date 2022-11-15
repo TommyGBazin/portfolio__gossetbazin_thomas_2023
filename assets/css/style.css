@@ -159,9 +159,9 @@ li {
   color: #fdfdfd !important;
 }
 
-/* .projects .item__project.hover-link a .number__list{
+.projects .item__project.hover-active-link a .number__list{
   background-blend-mode: luminosity;
-} */
+}
 
 .projects .item__project.hover-active-link a span{
   color: #959598 !important;
