@@ -19,23 +19,26 @@ project__items.hover(
       $('.item__project').removeClass('hover-active-link');
     }
 );
-  
+ 
+// Click on the project
+
   project__items.on('click', function(){
     let obj__project = $(this).data('link-card');
 
       $('.project').removeClass('js-animation-click-project');
       $('.'+obj__project).addClass('js-animation-click-project');
       $('body').addClass('card-open');
-
+      $('body').addClass('project-open');
   });
   
   close__btn.on('click', function(){   
     $(this).closest('.project').removeClass('js-animation-click-project');
-    
+    $('body').removeClass('project-open');
     // $('.item__project').not(this).removeClass('js-click-none');
     $('body').removeClass('card-open');
   });
 
+// Click outside
 
   $('body').on('click', function(e){
 
@@ -45,10 +48,12 @@ project__items.hover(
       if($(e.target).closest('.container__projects').length === 0  &&  $('body').hasClass("card-open") && e.target.parentNode.className !== 'js-cards-show' )
       {
         $('body').find('.project.js-animation-click-project').removeClass('js-animation-click-project');
+        $('body').removeClass('project-open');
       }
     }
 
   });
+
 
           // cursor custom
 
