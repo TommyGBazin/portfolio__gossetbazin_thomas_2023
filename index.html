@@ -1,344 +1,408 @@
-<!DOCTYPE html>
-<html lang="fr">
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Josefin+Sans');
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
-  <title>Thomas Gosset-Bazin — Designer d'interfaces</title>
-  <meta content="Architecte du Web, je suis attiré par ce choix de couleurs qui change tout un logo, ce pixel en moins qui redore l'allure d'un site, cette balise qu'on a oublié de fermer et qui rend tout notre code inutile. Mon maître-mot : l'accessibilité." name="description">
-  
-  <!-- Favicons -->
-  
-  <link href="./assets/img/favicon.png" rel="icon">
-  
-  <!-- CSS -->
 
-  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="./assets/css/style.css" rel="stylesheet">
-  
-</head>
-  
-<body>
-  
-  <div class="cursor"></div>
-  <div class="cursor2"></div>
-  
-  <div class="container d-flex flex-column justify-content-between">
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  .project {
+    scrollbar-width: auto;
+    scrollbar-color: #009999 #fdfdfd;
+  }
 
-    <!-- ======= En-tête ======= -->
-    
-    <header>
-      <div class="row py-3">
-        <div class="col m-0">
-          
-          <h1 style="line-height: 1.5em;">
-            <span class="name__title">Thomas <strong>Gosset-Bazin</strong></span>
-            <span class="job__title active-gradient gradient-text d-block">— Green Designer UI</span>
-          </h1>
-          
-        </div>
-      </div>
-      
-      <!-- ======= Story telling ======= -->
-      
-      <div class="row">
-          <div class="col-lg-4 offset-lg-6 col-xs-12 d-flex justify-content-center">
-            <a href="./assets/img/CV_T_GOSSET-BAZIN_UIUX.pdf" target="_blank" alt="CV Thomas Gosset-Bazin">
-            <img src="./assets/img/PhotoProfil.jpg" class="img-fluid story__telling" 
-            srcset="./assets/img/PhotoProfil-992.jpg 992w, ./assets/img/PhotoProfil-768.jpg 768w" alt="Thomas Gosset Bazin">
-            </a>
-        </div>
-      </div>
-      
-    </header>
-    
-    <!-- ======= Liste Projets ======= -->
-    
-    <main>
-      <div class="row">
-        
-        <div class="col">
-          <ul class="projects p-3">
-            <li class="item__project" data-link-card="billet__reduc" >                
-              <a  class="js-cards-show" accesskey="1">
-                  <span class="number__list number__align">01</span>
-                  <span class="title__list">Refonte fictive du site e-commerce BilletReduc</span>                  
-              </a>
-            </li>
-            <li class="item__project" data-link-card="deezer">                
-              <a  class="js-cards-show" accesskey="2">
-                <span class="number__list">02</span>
-                <span class="title__list">Refonte fictive de la landing page de Deezer</span>
-              </a>
-            </li>
-            <li class="item__project" data-link-card="agence">                
-              <a  class="js-cards-show" accesskey="3">
-                <span class="number__list">03</span>
-                <span class="title__list">Maquette d’un site d’agence de communication</span>
-              </a>
-            </li>
-            <li class="item__project" data-link-card="charte__graphique">                
-              <a  class="js-cards-show" accesskey="4">
-                <span class="number__list">04</span>
-                <span class="title__list">Création d’un logo & charte graphique pour une entreprise dans le domaine de l'art</span>
-              </a>
-            </li>
-            <li class="item__project" data-link-card="instagram">                
-              <a  class="js-cards-show" accesskey="5">
-                <span class="number__list">05</span>
-                <span class="title__list">Refonte d'un logo & charte graphique pour une entreprise dans le domaine du bâtiment</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <!-- ======= Cartes Projets ======= -->
-      
-      <div class="container-fluid container__projects">
-        
-        <div class="project billet__reduc justify-content-between">
-          <div class="close" padding="10px">
-            <span><a href="#">
-              <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.2874 2.63968L19.5933 3.35963L19.5933 3.35963L20.2874 2.63968ZM20.3521 6.17462L19.6322 5.48059L19.6322 5.48059L20.3521 6.17462ZM16.7524 2.70447L17.4724 3.3985L16.7524 2.70447ZM11.1271 8.53985L10.4331 9.2598L11.153 9.95383L11.847 9.23388L11.1271 8.53985ZM5.2917 2.91452L5.98573 2.19458L5.98573 2.19458L5.2917 2.91452ZM1.82155 6.51425L2.51558 5.79431L2.51558 5.79431L1.82155 6.51425ZM7.65693 12.1396L8.37688 12.8336L9.07091 12.1137L8.35096 11.4196L7.65693 12.1396ZM2.0316 17.975L1.31165 17.2809L1.31165 17.2809L2.0316 17.975ZM5.63133 21.4451L6.35127 22.1391L6.35127 22.1391L5.63133 21.4451ZM11.2567 15.6097L11.9507 14.8898L11.2307 14.1958L10.5367 14.9157L11.2567 15.6097ZM17.092 21.2351L16.398 21.955L17.092 21.2351ZM20.627 21.1703L19.907 20.4762L19.907 20.4762L20.627 21.1703ZM20.5622 17.6353L21.2562 16.9154L20.5622 17.6353ZM14.7268 12.01L14.0069 11.316L13.3128 12.0359L14.0328 12.73L14.7268 12.01ZM19.5933 3.35963C20.1897 3.93458 20.2071 4.88417 19.6322 5.48059L21.0721 6.86865C22.4136 5.477 22.373 3.2613 20.9814 1.91974L19.5933 3.35963ZM17.4724 3.3985C18.0473 2.80208 18.9969 2.78468 19.5933 3.35963L20.9814 1.91974C19.5897 0.578178 17.374 0.618789 16.0325 2.01044L17.4724 3.3985ZM11.847 9.23388L17.4724 3.3985L16.0325 2.01044L10.4071 7.84582L11.847 9.23388ZM4.59767 3.63447L10.4331 9.2598L11.8211 7.81991L5.98573 2.19458L4.59767 3.63447ZM2.4767 3.67334C3.05166 3.07692 4.00125 3.05952 4.59767 3.63447L5.98573 2.19458C4.59408 0.85302 2.37837 0.893629 1.03681 2.28528L2.4767 3.67334ZM2.51558 5.79431C1.91915 5.21935 1.90175 4.26977 2.4767 3.67334L1.03681 2.28528C-0.304745 3.67693 -0.264136 5.89264 1.12752 7.2342L2.51558 5.79431ZM8.35096 11.4196L2.51558 5.79431L1.12752 7.2342L6.9629 12.8595L8.35096 11.4196ZM2.75154 18.669L8.37688 12.8336L6.93698 11.4456L1.31165 17.2809L2.75154 18.669ZM2.79042 20.79C2.194 20.215 2.17659 19.2654 2.75154 18.669L1.31165 17.2809C-0.0299049 18.6726 0.0107045 20.8883 1.40236 22.2299L2.79042 20.79ZM4.91138 20.7511C4.33643 21.3475 3.38684 21.3649 2.79042 20.79L1.40236 22.2299C2.79401 23.5714 5.00972 23.5308 6.35127 22.1391L4.91138 20.7511ZM10.5367 14.9157L4.91138 20.7511L6.35127 22.1391L11.9766 16.3038L10.5367 14.9157ZM17.7861 20.5151L11.9507 14.8898L10.5626 16.3297L16.398 21.955L17.7861 20.5151ZM19.907 20.4762C19.3321 21.0727 18.3825 21.0901 17.7861 20.5151L16.398 21.955C17.7897 23.2966 20.0054 23.256 21.3469 21.8643L19.907 20.4762ZM19.8682 18.3553C20.4646 18.9302 20.482 19.8798 19.907 20.4762L21.3469 21.8643C22.6885 20.4727 22.6479 18.2569 21.2562 16.9154L19.8682 18.3553ZM14.0328 12.73L19.8682 18.3553L21.2562 16.9154L15.4208 11.2901L14.0328 12.73ZM19.6322 5.48059L14.0069 11.316L15.4468 12.704L21.0721 6.86865L19.6322 5.48059Z" fill=""/>
-              </svg></a>
-            </span>
-          </div>
-          <div class="row header__project py-3">
-            <h2 class="title__card"><span class="number__card">01 </span>Refonte fictive du site e-commerce BilletReduc</h2>
-            <h3 class="subtitle__card">Projet de formation sur l'outil Adobe XD</h3>
-            <div class="content__card">
-              <p>Le site e-commerce de <a href="https://www.billetreduc.com/" target="_blank" title="En savoir plus sur BilletReduc.com"><i>BilletReduc.com</i></a> est une plateforme contenant une offre très dense en terme d'événements culturels.</p>
-              <p>L'objectif de la formation était de pouvoir incorporer toutes les informations du site en rendant la navigation agréable, particulièrement pour les 15-25 ans.</p>
-            </div>
-          </div>
-          <div class="d-flex align-self-center justify-content-center py-3">
-            <div class="btn btn-primary content__button">
-              <a href="https://www.behance.net/gallery/151690113/-Redesign-E-commerce-WebSitefictionnal-project" target="_blank" title="Plus de détails sur le projet BilletReduc">
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.63601 1.3361L11.5772 1.3361C12.0645 1.3361 12.4595 1.73114 12.4595 2.21845V10.1596C12.4595 10.6469 12.0645 11.042 11.5772 11.042C11.0899 11.042 10.6948 10.6469 10.6948 10.1596L10.6948 4.34864L2.84234 12.2011C2.49776 12.5457 1.93909 12.5457 1.59451 12.2011C1.24993 11.8566 1.24993 11.2979 1.59451 10.9533L9.447 3.1008L3.63601 3.1008C3.1487 3.1008 2.75366 2.70576 2.75366 2.21845C2.75366 1.73114 3.1487 1.3361 3.63601 1.3361Z" stroke="#f9f9f9" stroke-linecap="round"/>
-              </svg>
-              <span class="content__button"><strong>&nbsp;Voir sur Behance</strong></span>
-            </a>
-          </div>
-          </div>
-          <div class="row align-self-center image__project py-3">
-            <img src="./assets/img/refonte-maquette-billetreduc.jpg" alt="mockup-projet-billetreduc-adobexd">
-          </div>
-        </div>
-        
-        <div class="project deezer justify-content-between">
-          <div class="close" padding="10px">
-            <span>
-              <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.2874 2.63968L19.5933 3.35963L19.5933 3.35963L20.2874 2.63968ZM20.3521 6.17462L19.6322 5.48059L19.6322 5.48059L20.3521 6.17462ZM16.7524 2.70447L17.4724 3.3985L16.7524 2.70447ZM11.1271 8.53985L10.4331 9.2598L11.153 9.95383L11.847 9.23388L11.1271 8.53985ZM5.2917 2.91452L5.98573 2.19458L5.98573 2.19458L5.2917 2.91452ZM1.82155 6.51425L2.51558 5.79431L2.51558 5.79431L1.82155 6.51425ZM7.65693 12.1396L8.37688 12.8336L9.07091 12.1137L8.35096 11.4196L7.65693 12.1396ZM2.0316 17.975L1.31165 17.2809L1.31165 17.2809L2.0316 17.975ZM5.63133 21.4451L6.35127 22.1391L6.35127 22.1391L5.63133 21.4451ZM11.2567 15.6097L11.9507 14.8898L11.2307 14.1958L10.5367 14.9157L11.2567 15.6097ZM17.092 21.2351L16.398 21.955L17.092 21.2351ZM20.627 21.1703L19.907 20.4762L19.907 20.4762L20.627 21.1703ZM20.5622 17.6353L21.2562 16.9154L20.5622 17.6353ZM14.7268 12.01L14.0069 11.316L13.3128 12.0359L14.0328 12.73L14.7268 12.01ZM19.5933 3.35963C20.1897 3.93458 20.2071 4.88417 19.6322 5.48059L21.0721 6.86865C22.4136 5.477 22.373 3.2613 20.9814 1.91974L19.5933 3.35963ZM17.4724 3.3985C18.0473 2.80208 18.9969 2.78468 19.5933 3.35963L20.9814 1.91974C19.5897 0.578178 17.374 0.618789 16.0325 2.01044L17.4724 3.3985ZM11.847 9.23388L17.4724 3.3985L16.0325 2.01044L10.4071 7.84582L11.847 9.23388ZM4.59767 3.63447L10.4331 9.2598L11.8211 7.81991L5.98573 2.19458L4.59767 3.63447ZM2.4767 3.67334C3.05166 3.07692 4.00125 3.05952 4.59767 3.63447L5.98573 2.19458C4.59408 0.85302 2.37837 0.893629 1.03681 2.28528L2.4767 3.67334ZM2.51558 5.79431C1.91915 5.21935 1.90175 4.26977 2.4767 3.67334L1.03681 2.28528C-0.304745 3.67693 -0.264136 5.89264 1.12752 7.2342L2.51558 5.79431ZM8.35096 11.4196L2.51558 5.79431L1.12752 7.2342L6.9629 12.8595L8.35096 11.4196ZM2.75154 18.669L8.37688 12.8336L6.93698 11.4456L1.31165 17.2809L2.75154 18.669ZM2.79042 20.79C2.194 20.215 2.17659 19.2654 2.75154 18.669L1.31165 17.2809C-0.0299049 18.6726 0.0107045 20.8883 1.40236 22.2299L2.79042 20.79ZM4.91138 20.7511C4.33643 21.3475 3.38684 21.3649 2.79042 20.79L1.40236 22.2299C2.79401 23.5714 5.00972 23.5308 6.35127 22.1391L4.91138 20.7511ZM10.5367 14.9157L4.91138 20.7511L6.35127 22.1391L11.9766 16.3038L10.5367 14.9157ZM17.7861 20.5151L11.9507 14.8898L10.5626 16.3297L16.398 21.955L17.7861 20.5151ZM19.907 20.4762C19.3321 21.0727 18.3825 21.0901 17.7861 20.5151L16.398 21.955C17.7897 23.2966 20.0054 23.256 21.3469 21.8643L19.907 20.4762ZM19.8682 18.3553C20.4646 18.9302 20.482 19.8798 19.907 20.4762L21.3469 21.8643C22.6885 20.4727 22.6479 18.2569 21.2562 16.9154L19.8682 18.3553ZM14.0328 12.73L19.8682 18.3553L21.2562 16.9154L15.4208 11.2901L14.0328 12.73ZM19.6322 5.48059L14.0069 11.316L15.4468 12.704L21.0721 6.86865L19.6322 5.48059Z" fill="#151516"/>
-              </svg>
-            </span>
-          </div>
-          <div class="row header__project py-3">
-            <h2 class="title__card"><span class="number__card">02 </span>Refonte fictive du site Deezer</h2>
-            <h3 class="subtitle__card">Projet de formation sur l'outil Adobe XD</h3>
-            <div class="content__card">
-              <p>Il s'agit ici de mon premier projet sur le logiciel Adobe XD.</p>
-              <p>J'avais comme objectif de me familiariser avec l'outil en créant une nouvelle <a href="https://www.journaldunet.fr/business/dictionnaire-du-marketing/1198313-landing-page-definition-traduction/" target="_blank" title="Définition Landing Page"><i>landing page</i></a> pour le site d'écoutes musicales <a href="https://www.deezer.com/fr/" target="_blank"><i>Deezer</i></a>.</p>          
-              <p>Un design coloré inspiré du <a href="https://99designs.fr/blog/histoire-design-genres-mouvements/design-memphis/" target="_blank" title="Explication sur le Memphis Design"><i>Memphis Design</i></a> permet de rendre le site plus vivant et dynamique.</p>          
-            </div>
-          </div>
-            <div class="d-flex align-self-center justify-content-center py-3">
-              <div class="btn btn-primary content__button">
-                <a href="https://www.linkedin.com/posts/thomasgossetbazin_uidesign-ui-adobexd-activity-6969914247434661888-QSlQ?utm_source=share&utm_medium=member_desktop" target="_blank" title="Plus de détails sur le projet Deezer">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.63601 1.3361L11.5772 1.3361C12.0645 1.3361 12.4595 1.73114 12.4595 2.21845V10.1596C12.4595 10.6469 12.0645 11.042 11.5772 11.042C11.0899 11.042 10.6948 10.6469 10.6948 10.1596L10.6948 4.34864L2.84234 12.2011C2.49776 12.5457 1.93909 12.5457 1.59451 12.2011C1.24993 11.8566 1.24993 11.2979 1.59451 10.9533L9.447 3.1008L3.63601 3.1008C3.1487 3.1008 2.75366 2.70576 2.75366 2.21845C2.75366 1.73114 3.1487 1.3361 3.63601 1.3361Z" stroke="#f9f9f9" stroke-linecap="round"/>
-                </svg>
-                <span class="content__button"><strong>&nbsp;Voir sur Linkedin</strong></span>
-              </a>
-            </div>
-            </div>
-          <div class="row align-self-center image__project py-3">
-            <img src="./assets/img/refonte-maquette-deezer-landing-page.jpg" alt="screenshot-landing-page-deezer">
-          </div>
-        </div>
-        
-        <div class="project agence justify-content-between">
-          <div class="close" padding="10px">
-            <span>
-              <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.2874 2.63968L19.5933 3.35963L19.5933 3.35963L20.2874 2.63968ZM20.3521 6.17462L19.6322 5.48059L19.6322 5.48059L20.3521 6.17462ZM16.7524 2.70447L17.4724 3.3985L16.7524 2.70447ZM11.1271 8.53985L10.4331 9.2598L11.153 9.95383L11.847 9.23388L11.1271 8.53985ZM5.2917 2.91452L5.98573 2.19458L5.98573 2.19458L5.2917 2.91452ZM1.82155 6.51425L2.51558 5.79431L2.51558 5.79431L1.82155 6.51425ZM7.65693 12.1396L8.37688 12.8336L9.07091 12.1137L8.35096 11.4196L7.65693 12.1396ZM2.0316 17.975L1.31165 17.2809L1.31165 17.2809L2.0316 17.975ZM5.63133 21.4451L6.35127 22.1391L6.35127 22.1391L5.63133 21.4451ZM11.2567 15.6097L11.9507 14.8898L11.2307 14.1958L10.5367 14.9157L11.2567 15.6097ZM17.092 21.2351L16.398 21.955L17.092 21.2351ZM20.627 21.1703L19.907 20.4762L19.907 20.4762L20.627 21.1703ZM20.5622 17.6353L21.2562 16.9154L20.5622 17.6353ZM14.7268 12.01L14.0069 11.316L13.3128 12.0359L14.0328 12.73L14.7268 12.01ZM19.5933 3.35963C20.1897 3.93458 20.2071 4.88417 19.6322 5.48059L21.0721 6.86865C22.4136 5.477 22.373 3.2613 20.9814 1.91974L19.5933 3.35963ZM17.4724 3.3985C18.0473 2.80208 18.9969 2.78468 19.5933 3.35963L20.9814 1.91974C19.5897 0.578178 17.374 0.618789 16.0325 2.01044L17.4724 3.3985ZM11.847 9.23388L17.4724 3.3985L16.0325 2.01044L10.4071 7.84582L11.847 9.23388ZM4.59767 3.63447L10.4331 9.2598L11.8211 7.81991L5.98573 2.19458L4.59767 3.63447ZM2.4767 3.67334C3.05166 3.07692 4.00125 3.05952 4.59767 3.63447L5.98573 2.19458C4.59408 0.85302 2.37837 0.893629 1.03681 2.28528L2.4767 3.67334ZM2.51558 5.79431C1.91915 5.21935 1.90175 4.26977 2.4767 3.67334L1.03681 2.28528C-0.304745 3.67693 -0.264136 5.89264 1.12752 7.2342L2.51558 5.79431ZM8.35096 11.4196L2.51558 5.79431L1.12752 7.2342L6.9629 12.8595L8.35096 11.4196ZM2.75154 18.669L8.37688 12.8336L6.93698 11.4456L1.31165 17.2809L2.75154 18.669ZM2.79042 20.79C2.194 20.215 2.17659 19.2654 2.75154 18.669L1.31165 17.2809C-0.0299049 18.6726 0.0107045 20.8883 1.40236 22.2299L2.79042 20.79ZM4.91138 20.7511C4.33643 21.3475 3.38684 21.3649 2.79042 20.79L1.40236 22.2299C2.79401 23.5714 5.00972 23.5308 6.35127 22.1391L4.91138 20.7511ZM10.5367 14.9157L4.91138 20.7511L6.35127 22.1391L11.9766 16.3038L10.5367 14.9157ZM17.7861 20.5151L11.9507 14.8898L10.5626 16.3297L16.398 21.955L17.7861 20.5151ZM19.907 20.4762C19.3321 21.0727 18.3825 21.0901 17.7861 20.5151L16.398 21.955C17.7897 23.2966 20.0054 23.256 21.3469 21.8643L19.907 20.4762ZM19.8682 18.3553C20.4646 18.9302 20.482 19.8798 19.907 20.4762L21.3469 21.8643C22.6885 20.4727 22.6479 18.2569 21.2562 16.9154L19.8682 18.3553ZM14.0328 12.73L19.8682 18.3553L21.2562 16.9154L15.4208 11.2901L14.0328 12.73ZM19.6322 5.48059L14.0069 11.316L15.4468 12.704L21.0721 6.86865L19.6322 5.48059Z" fill="#151516"/>
-              </svg>
-            </span>
-          </div>
-          <div class="row header__project py-3">
-            <h2 class="title__card"><span class="number__card">03 </span>Maquette d'un site d'agence</h2>
-            <h3 class="subtitle__card">Projet de formation sur l'outil Figma</h3>
-            <div class="content__card">
-              <p>Premier projet permettant de se familiariser avec l'outil Figma, sur thème libre.</p>
-              <p>Le sujet portait sur une agence de communication fictive. Je me suis directement inspiré du thème du film <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=207825.html" target="_blank" title="Page Allociné du film The Grand Budapest Hotel"><i>Wes Anderson, The Grand Budapest Hotel</i></a>.</p>
-            </div>
-          </div>
-          <div class="d-flex align-self-center justify-content-center py-3">
-            <div class="btn btn-primary content__button">
-              <a href="https://www.behance.net/gallery/148740275/-Grand-Budapest-Studio-Websitefictionnal-project" target="_blank" title="Plus de détails sur le projet Deezer">
-                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.63601 1.3361L11.5772 1.3361C12.0645 1.3361 12.4595 1.73114 12.4595 2.21845V10.1596C12.4595 10.6469 12.0645 11.042 11.5772 11.042C11.0899 11.042 10.6948 10.6469 10.6948 10.1596L10.6948 4.34864L2.84234 12.2011C2.49776 12.5457 1.93909 12.5457 1.59451 12.2011C1.24993 11.8566 1.24993 11.2979 1.59451 10.9533L9.447 3.1008L3.63601 3.1008C3.1487 3.1008 2.75366 2.70576 2.75366 2.21845C2.75366 1.73114 3.1487 1.3361 3.63601 1.3361Z" stroke="#f9f9f9" stroke-linecap="round"/>
-              </svg>
-              <span class="content__button"><strong>&nbsp;Voir sur Behance</strong></span>
-            </a>
-          </div>
-          </div>          
-          <div class="row align-self-center image__project py-3">
-            <img src="./assets/img/maquette-web-agence-figma.jpg" alt="maquette-web-agence-figma">
-          </div>
-        </div>
-        
-        <div class="project charte__graphique justify-content-between">
-          <div class="close" padding="10px">
-            <span>
-              <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.2874 2.63968L19.5933 3.35963L19.5933 3.35963L20.2874 2.63968ZM20.3521 6.17462L19.6322 5.48059L19.6322 5.48059L20.3521 6.17462ZM16.7524 2.70447L17.4724 3.3985L16.7524 2.70447ZM11.1271 8.53985L10.4331 9.2598L11.153 9.95383L11.847 9.23388L11.1271 8.53985ZM5.2917 2.91452L5.98573 2.19458L5.98573 2.19458L5.2917 2.91452ZM1.82155 6.51425L2.51558 5.79431L2.51558 5.79431L1.82155 6.51425ZM7.65693 12.1396L8.37688 12.8336L9.07091 12.1137L8.35096 11.4196L7.65693 12.1396ZM2.0316 17.975L1.31165 17.2809L1.31165 17.2809L2.0316 17.975ZM5.63133 21.4451L6.35127 22.1391L6.35127 22.1391L5.63133 21.4451ZM11.2567 15.6097L11.9507 14.8898L11.2307 14.1958L10.5367 14.9157L11.2567 15.6097ZM17.092 21.2351L16.398 21.955L17.092 21.2351ZM20.627 21.1703L19.907 20.4762L19.907 20.4762L20.627 21.1703ZM20.5622 17.6353L21.2562 16.9154L20.5622 17.6353ZM14.7268 12.01L14.0069 11.316L13.3128 12.0359L14.0328 12.73L14.7268 12.01ZM19.5933 3.35963C20.1897 3.93458 20.2071 4.88417 19.6322 5.48059L21.0721 6.86865C22.4136 5.477 22.373 3.2613 20.9814 1.91974L19.5933 3.35963ZM17.4724 3.3985C18.0473 2.80208 18.9969 2.78468 19.5933 3.35963L20.9814 1.91974C19.5897 0.578178 17.374 0.618789 16.0325 2.01044L17.4724 3.3985ZM11.847 9.23388L17.4724 3.3985L16.0325 2.01044L10.4071 7.84582L11.847 9.23388ZM4.59767 3.63447L10.4331 9.2598L11.8211 7.81991L5.98573 2.19458L4.59767 3.63447ZM2.4767 3.67334C3.05166 3.07692 4.00125 3.05952 4.59767 3.63447L5.98573 2.19458C4.59408 0.85302 2.37837 0.893629 1.03681 2.28528L2.4767 3.67334ZM2.51558 5.79431C1.91915 5.21935 1.90175 4.26977 2.4767 3.67334L1.03681 2.28528C-0.304745 3.67693 -0.264136 5.89264 1.12752 7.2342L2.51558 5.79431ZM8.35096 11.4196L2.51558 5.79431L1.12752 7.2342L6.9629 12.8595L8.35096 11.4196ZM2.75154 18.669L8.37688 12.8336L6.93698 11.4456L1.31165 17.2809L2.75154 18.669ZM2.79042 20.79C2.194 20.215 2.17659 19.2654 2.75154 18.669L1.31165 17.2809C-0.0299049 18.6726 0.0107045 20.8883 1.40236 22.2299L2.79042 20.79ZM4.91138 20.7511C4.33643 21.3475 3.38684 21.3649 2.79042 20.79L1.40236 22.2299C2.79401 23.5714 5.00972 23.5308 6.35127 22.1391L4.91138 20.7511ZM10.5367 14.9157L4.91138 20.7511L6.35127 22.1391L11.9766 16.3038L10.5367 14.9157ZM17.7861 20.5151L11.9507 14.8898L10.5626 16.3297L16.398 21.955L17.7861 20.5151ZM19.907 20.4762C19.3321 21.0727 18.3825 21.0901 17.7861 20.5151L16.398 21.955C17.7897 23.2966 20.0054 23.256 21.3469 21.8643L19.907 20.4762ZM19.8682 18.3553C20.4646 18.9302 20.482 19.8798 19.907 20.4762L21.3469 21.8643C22.6885 20.4727 22.6479 18.2569 21.2562 16.9154L19.8682 18.3553ZM14.0328 12.73L19.8682 18.3553L21.2562 16.9154L15.4208 11.2901L14.0328 12.73ZM19.6322 5.48059L14.0069 11.316L15.4468 12.704L21.0721 6.86865L19.6322 5.48059Z" fill="#151516"/>
-              </svg>
-            </span>
-          </div>
-          <div class="row header__project py-3">
-            <h2 class="title__card"><span class="number__card">04 </span>Création d'un logo & charte graphique pour une entreprise dans le domaine de l'art</h2>
-            <h3 class="subtitle__card">Projet réel sur les outils de la suite Adobe</h3>
-            <div class="content__card">
-              <p>Premier vrai projet de création de logo avec charte graphique lors de ma formation.</p>
-              <p>Après une prise d'informations auprès de la cliente ; celle-ci travaillant dans le copywriting lié à l'Art, j'ai réalisé ce logo. Ma volonté était de le rendre original et lié directement à l'histoire de sa future propriétaire.</p>
-            </div>
-          </div>
-          <div class="d-flex align-self-center justify-content-center py-3">
-            <div class="btn btn-primary content__button">
-              <a href="https://www.behance.net/gallery/147265653/-Branding-Copywriter-real-project" target="_blank" title="Plus de détails sur le projet Deezer">
-                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.63601 1.3361L11.5772 1.3361C12.0645 1.3361 12.4595 1.73114 12.4595 2.21845V10.1596C12.4595 10.6469 12.0645 11.042 11.5772 11.042C11.0899 11.042 10.6948 10.6469 10.6948 10.1596L10.6948 4.34864L2.84234 12.2011C2.49776 12.5457 1.93909 12.5457 1.59451 12.2011C1.24993 11.8566 1.24993 11.2979 1.59451 10.9533L9.447 3.1008L3.63601 3.1008C3.1487 3.1008 2.75366 2.70576 2.75366 2.21845C2.75366 1.73114 3.1487 1.3361 3.63601 1.3361Z" stroke="#f9f9f9" stroke-linecap="round"/>
-              </svg>
-              <span class="content__button"><strong>&nbsp;Voir sur Behance</strong></span>
-            </a>
-          </div>
-          </div>           
-          <div class="row align-self-center image__project py-3">
-            <img src="./assets/img/charte-graphique-logo-pafundi.jpg" alt="charte-graphique-logo-pafundi">
-          </div>
-        </div>
-        
-        <div class="project instagram justify-content-between">
-          <div class="close" padding="10px">
-            <span>
-              <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.2874 2.63968L19.5933 3.35963L19.5933 3.35963L20.2874 2.63968ZM20.3521 6.17462L19.6322 5.48059L19.6322 5.48059L20.3521 6.17462ZM16.7524 2.70447L17.4724 3.3985L16.7524 2.70447ZM11.1271 8.53985L10.4331 9.2598L11.153 9.95383L11.847 9.23388L11.1271 8.53985ZM5.2917 2.91452L5.98573 2.19458L5.98573 2.19458L5.2917 2.91452ZM1.82155 6.51425L2.51558 5.79431L2.51558 5.79431L1.82155 6.51425ZM7.65693 12.1396L8.37688 12.8336L9.07091 12.1137L8.35096 11.4196L7.65693 12.1396ZM2.0316 17.975L1.31165 17.2809L1.31165 17.2809L2.0316 17.975ZM5.63133 21.4451L6.35127 22.1391L6.35127 22.1391L5.63133 21.4451ZM11.2567 15.6097L11.9507 14.8898L11.2307 14.1958L10.5367 14.9157L11.2567 15.6097ZM17.092 21.2351L16.398 21.955L17.092 21.2351ZM20.627 21.1703L19.907 20.4762L19.907 20.4762L20.627 21.1703ZM20.5622 17.6353L21.2562 16.9154L20.5622 17.6353ZM14.7268 12.01L14.0069 11.316L13.3128 12.0359L14.0328 12.73L14.7268 12.01ZM19.5933 3.35963C20.1897 3.93458 20.2071 4.88417 19.6322 5.48059L21.0721 6.86865C22.4136 5.477 22.373 3.2613 20.9814 1.91974L19.5933 3.35963ZM17.4724 3.3985C18.0473 2.80208 18.9969 2.78468 19.5933 3.35963L20.9814 1.91974C19.5897 0.578178 17.374 0.618789 16.0325 2.01044L17.4724 3.3985ZM11.847 9.23388L17.4724 3.3985L16.0325 2.01044L10.4071 7.84582L11.847 9.23388ZM4.59767 3.63447L10.4331 9.2598L11.8211 7.81991L5.98573 2.19458L4.59767 3.63447ZM2.4767 3.67334C3.05166 3.07692 4.00125 3.05952 4.59767 3.63447L5.98573 2.19458C4.59408 0.85302 2.37837 0.893629 1.03681 2.28528L2.4767 3.67334ZM2.51558 5.79431C1.91915 5.21935 1.90175 4.26977 2.4767 3.67334L1.03681 2.28528C-0.304745 3.67693 -0.264136 5.89264 1.12752 7.2342L2.51558 5.79431ZM8.35096 11.4196L2.51558 5.79431L1.12752 7.2342L6.9629 12.8595L8.35096 11.4196ZM2.75154 18.669L8.37688 12.8336L6.93698 11.4456L1.31165 17.2809L2.75154 18.669ZM2.79042 20.79C2.194 20.215 2.17659 19.2654 2.75154 18.669L1.31165 17.2809C-0.0299049 18.6726 0.0107045 20.8883 1.40236 22.2299L2.79042 20.79ZM4.91138 20.7511C4.33643 21.3475 3.38684 21.3649 2.79042 20.79L1.40236 22.2299C2.79401 23.5714 5.00972 23.5308 6.35127 22.1391L4.91138 20.7511ZM10.5367 14.9157L4.91138 20.7511L6.35127 22.1391L11.9766 16.3038L10.5367 14.9157ZM17.7861 20.5151L11.9507 14.8898L10.5626 16.3297L16.398 21.955L17.7861 20.5151ZM19.907 20.4762C19.3321 21.0727 18.3825 21.0901 17.7861 20.5151L16.398 21.955C17.7897 23.2966 20.0054 23.256 21.3469 21.8643L19.907 20.4762ZM19.8682 18.3553C20.4646 18.9302 20.482 19.8798 19.907 20.4762L21.3469 21.8643C22.6885 20.4727 22.6479 18.2569 21.2562 16.9154L19.8682 18.3553ZM14.0328 12.73L19.8682 18.3553L21.2562 16.9154L15.4208 11.2901L14.0328 12.73ZM19.6322 5.48059L14.0069 11.316L15.4468 12.704L21.0721 6.86865L19.6322 5.48059Z" fill="#151516"/>
-              </svg>
-            </span>
-          </div>
-          <div class="row header__project py-">
-            <h2 class="title__card"><span class="number__card">05 </span>Refonte d'un logo & charte graphique pour une entreprise dans le domaine du bâtiment</h2>
-            <h3 class="subtitle__card">Projet freelance sur la suite Adobe</h3>
-            <div class="content__card">
-              <p>Suite à une prise d'informations établie en amont, le client me fait part de sa volonté d'avoir une identité graphique plus moderne.
-              </p>
-              <p>Suivant le schéma classique de créations de logo, en répondant notamment à trois axes dont le client m'avait fait part (conseil, polyvalence & qualité), j'ai pu lui proposer trois logos parmi lesquels il choisira celui axé sur la polyvalence avec ses trois bandes colorées.</p>
-              </div>
-            </div>
-            <div class="d-flex align-self-center justify-content-center py-3">
-              <div class="btn btn-primary content__button">
-                <a href="https://www.behance.net/gallery/155520675/-Branding-House-Painter-real-project" target="_blank" title="Plus de détails sur le projet Deezer">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.63601 1.3361L11.5772 1.3361C12.0645 1.3361 12.4595 1.73114 12.4595 2.21845V10.1596C12.4595 10.6469 12.0645 11.042 11.5772 11.042C11.0899 11.042 10.6948 10.6469 10.6948 10.1596L10.6948 4.34864L2.84234 12.2011C2.49776 12.5457 1.93909 12.5457 1.59451 12.2011C1.24993 11.8566 1.24993 11.2979 1.59451 10.9533L9.447 3.1008L3.63601 3.1008C3.1487 3.1008 2.75366 2.70576 2.75366 2.21845C2.75366 1.73114 3.1487 1.3361 3.63601 1.3361Z" stroke="#f9f9f9" stroke-linecap="round"/>
-                </svg>
-                <span class="content__button"><strong>&nbsp;Voir sur Behance</strong></span>
-              </a>
-            </div>
-            </div> 
-                        <div class="row align-self-center image__project py-3">
-              <img src="./assets/img/moodboard-charte-graphique.jpg" alt="moodboard-logo-charte-graphique-hbs">
-            </div>
-          </div>     
-          
-        </main>
-        
-        <!-- ======= Contact ======= -->
-        
-        <footer>
-          <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <div class="credits">
-                <p>Envie d'un site web accessible à tous ou d'une nouvelle charte graphique ? Contactez-moi !</p>
-              </div>
-          </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="social-links">         
-                <a href="mailto:thomasgossetbazin@gmail.com?subject=Contact&amp;body=Bonjour" title="M'envoyer un mail">
-                  <span class="mail">
-                    <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.893555 2.09009C0.893555 0.985518 1.78899 0.0900879 2.89355 0.0900879H18.8936C19.9981 0.0900879 20.8936 0.985519 20.8936 2.09009V2.73576L10.8936 8.19031L0.893555 2.73576V2.09009ZM10.8936 10.3855L0.893555 4.931V13.0901C0.893555 14.1947 1.78899 15.0901 2.89356 15.0901H18.8936C19.9981 15.0901 20.8936 14.1947 20.8936 13.0901V4.931L10.8936 10.3855Z" fill="#fdfdfd"/>
-                    </svg>                  
-                  </span>
-                </a>
-                <a href="https://www.linkedin.com/in/thomasgossetbazin/" target="_blank" title="Aller sur mon linkedin">
-                  <span class="linkedin">
-                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2.23045 4.00101C3.56411 4.00101 4.46089 3.12722 4.46089 1.93152C4.46089 0.827795 3.56411 0 2.23045 0C0.896777 0 0 0.873784 0 2.0005C0 3.12722 0.896777 4.00101 2.23045 4.00101ZM0.436891 18.0965H4.024V5.72558H0.436891V18.0965Z" fill="#fdfdfd"/>
-                      <path d="M14.8723 5.54162C13.1937 5.54162 11.7451 6.11648 10.7793 7.17422V5.72558H7.35314V18.0965H10.9403V11.98C10.9403 9.70359 12.1819 8.64585 13.9065 8.64585C15.4931 8.64585 16.4129 9.56562 16.4129 11.5661V18.0965H20V11.0143C20 7.2432 17.7925 5.54162 14.8723 5.54162Z" fill="#fdfdfd"/>
-                    </svg>
-                  </span>
-                </a>
-                <a href="https://www.behance.net/thomasgossetbazin" target="_blank" title="Aller sur mon behance">
-                  <span class="behance">
-                    <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.47957 3.34181C9.47957 4.62712 8.91736 5.61864 8.02718 6.16949C9.24532 6.62853 10.0262 7.73023 10.0262 9.34605C10.0262 11.5678 8.52693 12.8531 5.65339 12.8531H0V0H5.34104C8.07403 0 9.47957 1.3404 9.47957 3.34181ZM6.93399 3.74576C6.93399 2.73588 6.26245 2.24011 5.0287 2.24011H2.51435V5.26977H5.0287C6.26245 5.26977 6.93399 4.75565 6.93399 3.74576ZM2.51435 10.613H5.46598C6.77782 10.613 7.48059 10.1356 7.48059 9.0339C7.48059 7.95057 6.77782 7.43644 5.46598 7.43644H2.51435V10.613ZM15.6272 2.82768C18.0947 2.82768 20 4.77401 20 7.95057C20 8.10667 19.9843 8.30884 19.9696 8.49834L19.9696 8.4985L19.9696 8.49862C19.9636 8.57651 19.9577 8.65224 19.9531 8.72175H13.597C13.8312 9.95198 14.7214 10.7048 16.002 10.7048C16.8922 10.7048 17.5325 10.3927 18.1103 9.75L19.4065 11.4025C18.6257 12.4492 17.4544 13 15.9396 13C13.0348 13 11.1451 10.8517 11.1451 7.91384C11.1451 4.95763 13.066 2.82768 15.6272 2.82768ZM17.7043 7.05085C17.5325 5.80226 16.736 4.99435 15.6428 4.99435C14.534 4.99435 13.7375 5.7839 13.5658 7.05085H17.7043ZM13.5 1H13V2H13.5H17.5H18V1H17.5H13.5Z" fill="#fdfdfd"/>
-                    </svg>
-                  </span>
-                </a>
-                <a href="https://www.instagram.com/timmypointpng/" target="_blank" title="Aller sur mon instagram">
-                  <span class="insta">
-                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 6.7901C0 3.47639 2.68629 0.7901 6 0.7901H14C17.3137 0.7901 20 3.47639 20 6.7901V14.7901C20 18.1038 17.3137 20.7901 14 20.7901H6C2.68629 20.7901 0 18.1038 0 14.7901V6.7901ZM10 13.7901C11.6569 13.7901 13 12.447 13 10.7901C13 9.13325 11.6569 7.7901 10 7.7901C8.34315 7.7901 7 9.13325 7 10.7901C7 12.447 8.34315 13.7901 10 13.7901ZM10 15.7901C12.7614 15.7901 15 13.5515 15 10.7901C15 8.02868 12.7614 5.7901 10 5.7901C7.23858 5.7901 5 8.02868 5 10.7901C5 13.5515 7.23858 15.7901 10 15.7901ZM16 5.7901C16.5523 5.7901 17 5.34238 17 4.7901C17 4.23782 16.5523 3.7901 16 3.7901C15.4477 3.7901 15 4.23782 15 4.7901C15 5.34238 15.4477 5.7901 16 5.7901Z" fill="#fdfdfd"/>
-                    </svg>
-                  </span>
-                </a>
-                <a href="https://twitter.com/TimmyPointPNG" target="_blank" title="Aller sur mon twitter">
-                  <span class="twitter">
-                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.9266 5.57415C17.7024 12.8519 11.5096 20.305 0.810672 16.8156C1.8763 16.7377 3.71214 16.1547 4.95278 14.5637C4.91771 14.5542 4.88249 14.5444 4.84711 14.5344C2.24873 13.7982 1.58421 11.3317 1.3525 10.3698L3.99682 10.8605C0.495206 9.46066 0.258553 7.49921 0.121734 6.36522C0.0894539 6.09767 0.0627313 5.87619 0 5.71901L4.02007 7.20231C-3.36281e-05 5.71901 -0.278325 1.69164 1.28913 0.359709C3.42114 1.72441 6.7186 3.73256 9.44757 4.85541C9.38276 4.39438 9.39299 3.91479 9.48876 3.43234C9.94696 1.124 12.1897 -0.375838 14.498 0.0823603C16.2821 0.436492 17.5832 1.85659 17.8707 3.5491L20 3.1942C20 3.54071 19.5598 3.90189 19.0149 4.21062L20 4.04643C20 4.61502 18.8146 5.22313 17.9266 5.57415Z" fill="#fdfdfd"/>
-                    </svg>
-                  </span>
-                </a>
-              </div>
-            </div>
-          </div>         
-          
-        
-        </footer>
-        
-      </div>
-      
-      <!-- ======= Script ======= -->
-      
-      <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"></script>
-      <script src="assets/js/main.js"></script>
-    
- <!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://thomasgossetbazin.matomo.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='//cdn.matomo.cloud/thomasgossetbazin.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
+  /* Chrome, Edge, and Safari */
+  .project::-webkit-scrollbar {
+    width: 10px;
+  }
 
-      
-    </body>
-    
-    </html>
+  .project::-webkit-scrollbar-track {
+    background: #fdfdfd;
+  }
+
+  .project::-webkit-scrollbar-thumb {
+    background-color: #151616;
+    border-radius: 10px;
+    border: 4px solid #fff;
+  }
+
+
+:root{
+  --white-dark: #fdfdfd;
+}
+
+
+body {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(180deg, rgba(21,21,22,1) 0%, rgba(12,12,11,1) 100%);
+  color: #fdfdfd;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.container {
+  height: 100vh;
+}
+
+/*--------------------------------------------------------------
+En-tête
+--------------------------------------------------------------*/
+
+.name__title {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+}
+
+.job__title {
+  /* font-family: "josefin sans", sans-serif; */
+  font-size: 24px;
+  color: #959598;
+}
+
+@media screen and (min-width: 768px) {
+  .name__title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .job__title {
+    font-size: 40px;
+    /* font-family: "josefin sans", sans-serif; */
+  }
+}
+
+a {  
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+STORY TELLING
+--------------------------------------------------------------*/
+
+.story__telling {
+  max-width: 350px;
+  box-shadow: 0px 2px 30px #000;
+}
+
+.story__telling:nth-child(1) {
+  transform: rotate(-3deg);
+}
+
+.story__telling:nth-child(2) {
+  transform: rotate(4deg);
+}
+
+.story__telling:nth-child(3) {
+  transform: rotate(10deg);
+}
+
+.story__telling:nth-child(4) {
+  transform: rotate(4deg);
+}
+
+.top {
+  z-index: 150;
+}
+
+.bottom{
+  z-index: 50;
+}
+/*--------------------------------------------------------------
+PROJET
+--------------------------------------------------------------*/
+
+.number__list {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  background: linear-gradient(145.01deg, rgba(0,178,178,1) 16.55%, rgba(0,164,164,1) 39.82%, rgba(0,153,153,1) 62.38%, rgba(38,101,95,1) 85.29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.number__align {
+  letter-spacing: 3px;
+}
+
+.title__list {
+  padding-left: 2.5vw;
+}
+
+a span.title__list {
+  color: #fdfdfd;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0rem;
+  display: inline-block;
+  line-height: 1.50;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.project {  
+  position: fixed;
+  right: 50px;
+  bottom: 0;
+  height: 90vh;
+  overflow-y: scroll;
+  background-color: var(--white-dark);
+  transform: translateY(108%) rotate(25deg);
+  transform-origin: top left;
+  transition: transform .6s var(--ease-in-out-cubic);
+  width: 50vw;
+  z-index: 3;
+  transition: all .3s ease;
+  padding: 3em;
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.js-animation-hover-project{
+  transform: translateY(66%) rotate(19deg);
+}
+.js-animation-click-project{
+  transform: translateY(0) rotate(0);
+}
+
+.projects .item__project a span{
+  transition: color .2s ease;
+}
+
+.projects .item__project.hover-link a span{
+  color: #fdfdfd !important;
+}
+
+.projects .item__project.hover-active-link a .number__list{
+  background-blend-mode: luminosity;
+}
+
+.projects .item__project.hover-active-link a span{
+  color: #959598 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .project{
+    width: 100%;
+    right: 0;
+    top: 0;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .project{
+    /* width: 100%; */
+    right: 0;
+    top: 0;
+    height: 100%;
+  }
+}
+
+.project .close svg{
+  fill: #151616;
+}
+
+.project .close{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.number__card {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  background: linear-gradient(145.01deg, rgba(0,178,178,1) 16.55%, rgba(0,164,164,1) 39.82%, rgba(0,153,153,1) 62.38%, rgba(38,101,95,1) 85.29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 768px){
+  .number__card {
+    font-size: 30px;
+  }  
+}
+
+.title__card {
+  color: #151616;
+  font-size: 24px;
+}
+
+.subtitle__card {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  color: #151616;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.content__card {
+  color: #151616;
+  font-size: 14px;
+}
+
+.content__card a {
+  color: #151616 !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited .btn:first-child:hover {
+  background-color: #009999 !important;
+  border: #009999;
+}
+
+.content__button {
+  color: #fdfdfd;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .title__card {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle__card {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content__card {
+    font-size: 16px;
+  }
+}
+
+.image__project {
+  position: relative;
+  max-height: 350px;
+}
+
+/*--------------------------------------------------------------
+Contact
+--------------------------------------------------------------*/
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.social-links a {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/*--------------------------------------------------------------
+# Credits
+--------------------------------------------------------------*/
+
+.credits {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 10px 0 0 0;
+  text-align: left;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 992px) {
+  .credits {
+    text-align: center;
+  }
+}
+
+/*--------------------------------------------------------------
+# Cursor
+--------------------------------------------------------------*/
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #009999;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.cursor2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #fdfdfd;
+  /* opacity: .3; */
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.hover {
+  background: linear-gradient(45deg,rgba(0,178,178,1), rgba(0,164,164,1), rgba(0,153,153,1), rgba(38,101,95,1));
+  opacity: 0.25;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+}
+
+@media only screen and (max-width: 912px) {
+  .cursor {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .cursor2 {
+    display: none;
+  }
+}
+
+ 
+ 
+body.project-open .layout__black:before
+{
+  content: '';
+  background: rgba(0,0,0,.75);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+  }
+
