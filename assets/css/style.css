@@ -90,31 +90,10 @@ STORY TELLING
 .story__telling {
   max-width: 350px;
   box-shadow: 0px 2px 30px #000;
+  transform: rotate(-4deg);
 }
 
-.story__telling:nth-child(1) {
-  transform: rotate(-3deg);
-}
 
-.story__telling:nth-child(2) {
-  transform: rotate(4deg);
-}
-
-.story__telling:nth-child(3) {
-  transform: rotate(10deg);
-}
-
-.story__telling:nth-child(4) {
-  transform: rotate(4deg);
-}
-
-.top {
-  z-index: 150;
-}
-
-.bottom{
-  z-index: 50;
-}
 /*--------------------------------------------------------------
 PROJET
 --------------------------------------------------------------*/
@@ -202,7 +181,6 @@ li {
 }
 @media screen and (max-width: 1200px) {
   .project{
-    /* width: 100%; */
     right: 0;
     top: 0;
     height: 100%;
@@ -286,10 +264,8 @@ li {
 }
 
 .image__project {
-  position: relative;
-  max-height: 350px;
+  max-height: 700px;
 }
-
 /*--------------------------------------------------------------
 Contact
 --------------------------------------------------------------*/
