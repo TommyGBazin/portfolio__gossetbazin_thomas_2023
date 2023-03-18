@@ -97,3 +97,13 @@ project__items.hover(
     document.body.querySelectorAll("button, label, input, textarea, select, a").forEach((el) => {
       el.style.cursor = 'inherit'
     });
+
+// Apparition de la page
+
+window.addEventListener('load', function() {
+  var overlay = document.getElementById('overlay');
+  overlay.style.opacity = 0;
+  setTimeout(function() {
+    overlay.style.display = 'none';
+  }, 1000); // temps de la transition en ms
+});
