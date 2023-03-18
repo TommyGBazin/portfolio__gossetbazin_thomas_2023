@@ -90,6 +90,18 @@ En-tête
   left: -2%;
   line-height: .8em;
   z-index: -10;
+  animation: fadeLeft 1s forwards;
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -351,6 +363,18 @@ Contact
   right: -2%;
   line-height: .8em;
   z-index: -10;
+  animation: fadeRight 1s forwards;
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media screen and (min-width: 768px) {
