@@ -124,9 +124,9 @@ PROJET
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
   background: rgba(255, 255, 255, 0.5);
-  /*background: linear-gradient(145.01deg, rgba(0,178,178,1) 16.55%, rgba(0,164,164,1) 39.82%, rgba(0,153,153,1) 62.38%, rgba(38,101,95,1) 85.29%);*/
+  /*background: linear-gradient(145.01deg, rgba(0,178,178,1) 16.55%, rgba(0,164,164,1) 39.82%, rgba(0,153,153,1) 62.38%, rgba(38,101,95,1) 85.29%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
 }
 
 .number__align {
@@ -226,9 +226,9 @@ li {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
   background: rgba(0, 0, 0, 0.5);
-  /*background: linear-gradient(145.01deg, rgba(0,178,178,1) 16.55%, rgba(0,164,164,1) 39.82%, rgba(0,153,153,1) 62.38%, rgba(38,101,95,1) 85.29%);*/
+  /*background: linear-gradient(145.01deg, rgba(0,178,178,1) 16.55%, rgba(0,164,164,1) 39.82%, rgba(0,153,153,1) 62.38%, rgba(38,101,95,1) 85.29%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
 }
 
 @media screen and (min-width: 768px){
