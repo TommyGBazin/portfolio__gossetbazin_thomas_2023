@@ -335,8 +335,8 @@ Contact
   font-family: 'josefin sans', sans-serif;
   color:  rgba(255, 255, 255, 0.05);
   position: absolute;
-  bottom: -4%;
-  right: -3%;
+  bottom: -3%;
+  right: -2%;
   line-height: .8em;
   z-index: -10;
 }
