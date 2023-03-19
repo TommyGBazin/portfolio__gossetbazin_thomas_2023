@@ -75,6 +75,7 @@ En-tête
 .job__title {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.5);
+  animation: fadeTop 1s forwards;
 }
 
 .text__bold {
@@ -140,6 +141,10 @@ STORY TELLING
 /*--------------------------------------------------------------
 PROJET
 --------------------------------------------------------------*/
+
+.fade__list {
+  animation: fadeTop 1s forwards;
+}
 
 .number__list {
   font-family: 'Josefin Sans', sans-serif;
@@ -386,6 +391,17 @@ Contact
 /*--------------------------------------------------------------
 # Elements graphiques
 --------------------------------------------------------------*/
+
+@keyframes fadeTop {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media screen and (max-width: 768px) {
   .animation__plus {
