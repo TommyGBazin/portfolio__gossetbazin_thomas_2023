@@ -242,6 +242,12 @@ li {
 
 .project .close svg{
   fill: #000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project .close:hover svg{
+  fill: #000;
+  opacity: .1;
 }
 
 .project .close{
@@ -286,10 +292,19 @@ li {
   color: #000 !important;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited .btn:first-child:hover {
-  background-color: #000 !important;
-  border: #000;
+.btn-primary:hover,
+.btn-primary:focus {
+  box-shadow: inset 15em 0 0 0 var(--hover);
 }
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    padding: 8px 30px 8px 30px !important;
+    background-color: #000 !important;
+    border: #000;
+    --hover: #333333;
+    transition: 0.35s;
+}
+
 
 .content__button {
   color: #fff;
