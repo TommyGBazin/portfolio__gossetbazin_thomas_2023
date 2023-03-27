@@ -301,7 +301,7 @@ li {
     padding: 8px 30px 8px 30px !important;
     background-color: #000 !important;
     border: #000;
-    --hover: #333333;
+    --hover: #00AEEF;
     transition: 0.35s;
 }
 
@@ -351,14 +351,14 @@ Contact
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #EE008B;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
 }
 
 .hover__social:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: #EE008B;
 }
 
 .hover__social:hover::before {
