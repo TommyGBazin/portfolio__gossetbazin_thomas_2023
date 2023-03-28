@@ -138,12 +138,6 @@ a {
 STORY TELLING
 --------------------------------------------------------------*/
 
-.story__telling {
-  max-width: 350px;
-  box-shadow: 0px 2px 30px #000;
-  transform: rotate(-4deg);
-}
-
 
 /*--------------------------------------------------------------
 PROJET
@@ -302,7 +296,7 @@ li {
     background-color: #000 !important;
     border: #000;
     --hover: #00AEEF;
-    transition: 0.35s;
+    transition: 0.6s;
 }
 
 
