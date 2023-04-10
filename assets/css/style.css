@@ -438,6 +438,7 @@ Contact
   line-height: 24px;
   border: 1px solid black;
   animation: rotate 5s linear infinite;
+  opacity: .5;
 }
 
 @keyframes rotate {
