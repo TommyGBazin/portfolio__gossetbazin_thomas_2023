@@ -138,6 +138,12 @@ a {
 STORY TELLING
 --------------------------------------------------------------*/
 
+@media screen and (max-width: 768px) {
+  lottie-player {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
 
 /*--------------------------------------------------------------
 PROJET
