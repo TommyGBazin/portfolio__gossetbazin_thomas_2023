@@ -142,21 +142,6 @@ a {
 }
 
 /*--------------------------------------------------------------
-STORY TELLING
---------------------------------------------------------------*/
-
-@media screen and (max-width: 768px) {
-  lottie-player {
-    width: 150px !important;
-    height: 150px !important;
-  }
-}
-
-lottie-player {
-  opacity: .5;
-}
-
-/*--------------------------------------------------------------
 PROJET
 --------------------------------------------------------------*/
 
@@ -166,8 +151,14 @@ PROJET
 
 .number__list {
   font-family: var(--secondary-font);
-  font-size: 20px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .number__list {
+    font-size: 20px;
+  }
 }
 
 .number__align {
@@ -341,6 +332,28 @@ li {
 }
 
 /*--------------------------------------------------------------
+PARTENAIRES
+--------------------------------------------------------------*/
+
+.text__partenaires {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .text__partenaires {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  #partners img {
+    max-width: 40px;
+  }
+}
+
+/*--------------------------------------------------------------
 Contact
 --------------------------------------------------------------*/
 
@@ -458,62 +471,6 @@ Contact
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-/*--------------------------------------------------------------
-# Cursor
---------------------------------------------------------------*/
-
-.cursor {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  border: 1px solid #fff;
-  transition: all 200ms ease-out;
-  position: fixed;
-  pointer-events: none;
-  left: 0;
-  top: 0;
-  transform: translate(calc(-50% + 15px), -50%);
-  z-index: 9999;
-  mix-blend-mode: difference;
-}
-
-.cursor2 {
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background-color: #fff;
-  /* opacity: .3; */
-  position: fixed;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: width .3s, height .3s, opacity .3s;
-  z-index: 9999;
-  mix-blend-mode: difference;
-}
-
-.hover {
-  background: #fff;
-  opacity: 0.05;
-}
-
-.cursorinnerhover {
-  width: 50px;
-  height: 50px;
-  opacity: .5;
-}
-
-@media only screen and (max-width: 912px) {
-  .cursor {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 912px) {
-  .cursor2 {
-    display: none;
   }
 }
 
