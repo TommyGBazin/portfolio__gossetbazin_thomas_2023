@@ -5,6 +5,7 @@ close__btn = $('.project .close');
 project__items.hover(
     function() {
       let obj__project = $(this).data('link-card');
+
       $('.'+obj__project).css('z-index','999');
       $('.'+obj__project).addClass('js-animation-hover-project');
       $(this).addClass('hover-link');
@@ -19,11 +20,12 @@ project__items.hover(
       $('.item__project').removeClass('hover-active-link');
     }
 );
- 
+
 // Click on the project
 
-  project__items.on('click', function(){
-    let obj__project = $(this).data('link-card');
+  project__items.on('click', 
+    function(){
+      let obj__project = $(this).data('link-card');
 
       $('.project').removeClass('js-animation-click-project');
       $('.'+obj__project).addClass('js-animation-click-project');
@@ -31,11 +33,12 @@ project__items.hover(
       $('body').addClass('project-open');
   });
   
-  close__btn.on('click', function(){   
-    $(this).closest('.project').removeClass('js-animation-click-project');
-    $('body').removeClass('project-open');
+  close__btn.on('click', 
+    function(){   
+      $(this).closest('.project').removeClass('js-animation-click-project');
+      $('body').removeClass('project-open');
     // $('.item__project').not(this).removeClass('js-click-none');
-    $('body').removeClass('card-open');
+      $('body').removeClass('card-open');
   });
 
 // Click outside
