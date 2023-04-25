@@ -69,6 +69,10 @@ img {
   transition: opacity 1s ease-in-out;
 }
 
+a {
+  cursor: pointer;
+}
+
 /*--------------------------------------------------------------
 En-tête
 --------------------------------------------------------------*/
@@ -217,7 +221,7 @@ a span.title__list {
 }
 
 @media screen and (max-width: 768px) {
-  .project{
+  .project {
     width: 100%;
     right: 0;
     top: 0;
@@ -225,7 +229,7 @@ a span.title__list {
   }
 }
 @media screen and (max-width: 1200px) {
-  .project{
+  .project {
     right: 0;
     top: 0;
     height: 100%;
