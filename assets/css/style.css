@@ -2,8 +2,9 @@
   --primary-font: 'Montserrat', sans-serif;
   --secondary-font: 'Josefin Sans', sans-serif;
   --primary-color: #000;
-  --hover-primary-color: #00AEEF;
-  --hover-secondary-color: #EE008B;
+  --white-dark: #fff;
+  --hover-primary-color: #AB75E8;
+  --hover-secondary-color: #3FBC9F;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -27,12 +28,6 @@
     border-radius: 10px;
     border: 4px solid #fff;
   }
-
-
-:root{
-  --white-dark: #fff;
-}
-
 
 body {
   font-size: 13px;
@@ -104,7 +99,7 @@ h2 {
 }
 
 .pink__color {
-  background: linear-gradient(45deg, #EE008B, #FFFFFF);
+  background: linear-gradient(45deg, var(--hover-primary-color), var(--white-dark));
 			background-size: 200% 200%;
 			animation: gradient 3s ease-in-out infinite;
 			background-clip: text;
