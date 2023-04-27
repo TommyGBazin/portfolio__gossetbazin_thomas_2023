@@ -364,14 +364,14 @@ Contact
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--hover-secondary-color);
+  background-color: var(--hover-primary-color);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease-in-out;
 }
 
 .hover__social:hover {
-  color: var(--hover-secondary-color);
+  color: var(--hover-primary-color);
 }
 
 .hover__social:hover::before {
