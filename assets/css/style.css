@@ -5,6 +5,7 @@
   --white-dark: #fff;
   --hover-primary-color: #AB75E8;
   --hover-secondary-color: #3FBC9F;
+  --hover-tertiary-color: #FF6C51;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -156,13 +157,36 @@ PROJET
   letter-spacing: 3px;
 }
 
-.category__list {
-  padding-left: 4vw;
-  color: var(--hover-secondary-color);
+.category__list_design {
+  font-size: 12px;
+  margin-left: 5vw;
+  color: var(--primary-color);
+  background-color: var(--hover-primary-color);
+  padding: 4px 8px;
+}
+
+.category__list_brand {
+  font-size: 12px;
+  margin-left: 5vw;
+  color: var(--primary-color);
+  background-color: var(--hover-secondary-color);
+  padding: 4px 8px;
+}
+
+.category__list_dev {
+  font-size: 12px;
+  margin-left: 5vw;
+  color: var(--primary-color);
+  background-color: var(--hover-tertiary-color);
+  padding: 4px 8px;
 }
 
 .title__list {
+  font-family: var(--secondary-font);
   padding-left: 2.5vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 a span.title__list {
