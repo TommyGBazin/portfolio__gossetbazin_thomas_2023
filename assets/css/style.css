@@ -82,6 +82,7 @@ En-tête
   line-height: 56px;
   animation: fadeTop 1s forwards;
   font-family: var(--secondary-font);
+  letter-spacing: -8px;
 }
 
 .presentation__txt {
