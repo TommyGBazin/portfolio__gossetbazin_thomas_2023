@@ -163,6 +163,7 @@ PROJET
   color: var(--primary-color);
   background-color: var(--hover-primary-color);
   padding: 4px 8px;
+  border-radius: 4px;
 }
 
 .category__list_brand {
