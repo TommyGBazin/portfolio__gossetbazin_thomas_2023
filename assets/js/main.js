@@ -69,7 +69,7 @@ window.addEventListener('load', function() {
 
 // Animation Job
 
-const textArray = ["Designer UI/UX", "Brand Designer", "Intégrateur", "Graphiste"];
+const textArray = ["Designer UI UX", "Brand Designer", "Intégrateur", "Graphiste"];
 let index = 0;
 const loopText = document.querySelector(".loop__text");
 
