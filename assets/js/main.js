@@ -79,7 +79,7 @@ setInterval(function() {
   if (index === textArray.length) {
     index = 0;
   }
-}, 1800);
+}, 2000);
 
 const words = ["Designer UI UX", "Brand Designer", "Intégrateur", "Graphiste"];
 const colors = ['#AB75E8', '#3FBC9F', '#FF6C51'];
@@ -92,7 +92,7 @@ const loop = () => {
   $text.css('color', color);
   $text.text(word);
   i = (i + 1) % words.length;
-  setTimeout(loop, 1800);
+  setTimeout(loop, 2000);
 };
 
 loop();
