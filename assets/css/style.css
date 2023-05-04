@@ -82,7 +82,7 @@ En-tête
   line-height: 56px;
   animation: fadeTop 1s forwards;
   font-family: var(--secondary-font);
-  letter-spacing: -8px;
+  letter-spacing: -4px;
 }
 
 .presentation__txt {
@@ -92,32 +92,30 @@ En-tête
 
 h2 {
   font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
-.opacity__color {
-  color: rgba(255, 255, 255, 0.5);
+.loop__text h2 {
+  display: none;
 }
 
-.pink__color {
-  background: linear-gradient(45deg, var(--hover-primary-color), var(--white-dark));
-			background-size: 200% 200%;
-			animation: gradient 3s ease-in-out infinite;
-			background-clip: text;
-			-webkit-background-clip: text;
-			color: transparent;
+.loop__text h2.active {
+  display: block;
 }
 
-@keyframes gradient {
+.loop__text h2.active span {
+  animation: letterspacing 5s infinite alternate ease-in-out;
+  letter-spacing: 0rem;
+}
+
+@keyframes letterspacing {
   0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
+      letter-spacing: 0rem;
   }
 
   100% {
-    background-position: 0% 50%;
+      letter-spacing: .5rem;
   }
 }
 
@@ -125,6 +123,7 @@ h2 {
   .welcome__txt {
     font-size: 116px;
     line-height: 124px;
+    letter-spacing: -8px;
   }
 }
 
@@ -474,4 +473,3 @@ body.project-open .layout__black:before
   z-index: 0;
   pointer-events: none;
   }
-
