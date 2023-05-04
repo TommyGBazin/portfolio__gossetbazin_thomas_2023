@@ -66,3 +66,34 @@ window.addEventListener('load', function() {
     overlay.style.display = 'none';
   }, 1000); // temps de la transition en ms
 });
+
+// Animation Job
+
+const textArray = ["Designer UI/UX", "Brand Designer", "Intégrateur", "Graphiste"];
+let index = 0;
+const loopText = document.querySelector(".loop__text");
+
+setInterval(function() {
+  loopText.innerHTML = textArray[index];
+  index++;
+  if (index === textArray.length) {
+    index = 0;
+  }
+}, 1800);
+
+const words = ["Designer UI UX", "Brand Designer", "Intégrateur", "Graphiste"];
+const colors = ['#AB75E8', '#3FBC9F', '#FF6C51'];
+
+let i = 0;
+const loop = () => {
+  const word = words[i];
+  const color = colors[Math.floor(Math.random() * colors.length)];
+  const $text = $('.loop__text');
+  $text.css('color', color);
+  $text.text(word);
+  i = (i + 1) % words.length;
+  setTimeout(loop, 1800);
+};
+
+loop();
+
