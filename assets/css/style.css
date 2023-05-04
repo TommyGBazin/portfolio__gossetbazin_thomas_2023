@@ -172,6 +172,7 @@ PROJET
   color: var(--primary-color);
   background-color: var(--hover-secondary-color);
   padding: 4px 8px;
+  border-radius: 4px;
 }
 
 .category__list_dev {
@@ -180,6 +181,7 @@ PROJET
   color: var(--primary-color);
   background-color: var(--hover-tertiary-color);
   padding: 4px 8px;
+  border-radius: 4px;
 }
 
 .title__list {
