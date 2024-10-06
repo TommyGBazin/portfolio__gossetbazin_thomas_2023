@@ -69,7 +69,7 @@ window.addEventListener('load', function() {
 
 // Animation Job
 
-const textArray = ["Designer UI UX", "Brand Designer", "Intégrateur", "Graphiste"];
+const textArray = ["Designer UI UX", "Directeur Artistique", "Développeur Front-End", "Chef de Projet"];
 let index = 0;
 const loopText = document.querySelector(".loop__text");
 
@@ -81,7 +81,7 @@ setInterval(function() {
   }
 }, 2000);
 
-const words = ["Designer UI UX", "Brand Designer", "Intégrateur", "Graphiste"];
+const words = ["Designer UI UX", "Directeur Artistique", "Développeur Front-End", "Chef de Projet"];
 const colors = ['#AB75E8', '#3FBC9F', '#FF6C51'];
 
 let i = 0;
