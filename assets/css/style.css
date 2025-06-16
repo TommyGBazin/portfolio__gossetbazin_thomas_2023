@@ -36,8 +36,8 @@
 body {
   font-size: 13px;
   font-family: var(--primary-font);
-  background-color: var(--primary-color);
-  color: #fff;
+  background-color: var(--white-dark);
+  color: var(--primary-color);
   height: 100vh;
   position: relative;
 }
